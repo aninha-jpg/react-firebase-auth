@@ -6,7 +6,12 @@ Desenvolvida para cadastro, login e visualização de dados de usuários utiliza
 
 O projeto possui três páginas principais: **Login, Cadastro e Principal**, com autenticação de usuários e armazenamento dos dados no Firestore.
 
+## ☁️ Deploy
+
+A aplicação também foi publicada em um ambiente de nuvem para acesso público.
+
 **[Aplicação Online!](https://app-react-tecnologias-web.web.app/)**
+
 
 ## 🚀 Tecnologias utilizadas
 
@@ -78,4 +83,29 @@ src/
 │
 ├── Firebase.js
 ├── Rotas.js
+```
+
+## ⚙️ Como executar o projeto
+
+Após baixar e extrair o projeto, abra o terminal na pasta principal e instale as dependências:
+
+```bash
+npm install
+```
+
+Esse comando irá instalar as dependências presentes no `package.json` e recriar a pasta `node_modules`.
+
+
+Para iniciar a aplicação em ambiente de desenvolvimento:
+
+```bash
+npm start
+```
+
+## 🏗️ Build do projeto
+
+Para gerar a versão de produção da aplicação:
+
+```bash
+npm run build
 ```
