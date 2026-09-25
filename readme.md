@@ -1,8 +1,12 @@
 # 🔐 Sistema de Autenticação com React e Firebase
 
-Aplicação web desenvolvida em **React** utilizando **React Router Dom**, **Firebase Authentication** e **Cloud Firestore**.
+Aplicação web desenvolvida em **React** utilizando **React Router Dom**, **Firebase Authentication**, **Cloud Firestore** e **Firebase Hosting**.
+
+Desenvolvida para cadastro, login e visualização de dados de usuários utilizando Firebase Authentication e Firestore.
 
 O projeto possui três páginas principais: **Login, Cadastro e Principal**, com autenticação de usuários e armazenamento dos dados no Firestore.
+
+**[Aplicação Online!](https://app-react-tecnologias-web.web.app/)**
 
 ## 🚀 Tecnologias utilizadas
 
@@ -54,6 +58,7 @@ Após a autenticação, a aplicação busca no Firestore os dados associados ao 
 
 Usuários que não estão autenticados são redirecionados para a página de Login.
 
+
 ## 🗂️ Estrutura do projeto
 
 ```text
@@ -74,4 +79,3 @@ src/
 ├── Firebase.js
 ├── Rotas.js
 ```
-<!-- Teste de CI -->
