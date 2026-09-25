@@ -5,6 +5,8 @@ import { collection, addDoc } from "firebase/firestore";
 import { auth, db } from "../../Firebase";
 import "./style.css";
 
+const hoje = new Date().toISOString().split("T")[0];
+
 class Cadastro extends Component {
 
     constructor(props){
@@ -18,6 +20,7 @@ class Cadastro extends Component {
         }
         this.gravar = this.gravar.bind(this);
     }
+
 
     async gravar() {
 
@@ -102,12 +105,13 @@ class Cadastro extends Component {
                         type="email"
                         placeholder="E-mail"
                         value={this.state.email}
-                        onChange={(e) => this.setState({ email: e.target.value })}
+                        onChange={(e) => this.setState({ email: e.target.value.toLowerCase() })}
                         required
                     />
 
                     <input
                         type="date"
+                        max={hoje}
                         value={this.state.dn}
                         onChange={(e) => this.setState({ dn: e.target.value })}
                         required

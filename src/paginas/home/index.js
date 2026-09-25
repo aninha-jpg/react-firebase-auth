@@ -57,6 +57,9 @@ class Home extends Component {
 
     render() {
 
+        const dataFormatada = new Date(this.state.dn + "T00:00:00").toLocaleDateString("pt-BR");
+
+
         if (this.state.carregando) {
             return (
                 <div className="home-page">
@@ -90,7 +93,7 @@ class Home extends Component {
 
                     <div className="dado">
                         <span>Data de nascimento</span>
-                        <strong>{this.state.dn}</strong>
+                        <strong>{dataFormatada}</strong>
                     </div>
 
                 </div>

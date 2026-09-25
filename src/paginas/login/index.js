@@ -64,7 +64,7 @@ class Login extends Component {
                         placeholder="E-mail"
                         value={this.state.email}
                         onChange={(e) =>
-                            this.setState({ email: e.target.value })
+                            this.setState({ email: e.target.value.toLowerCase() })
                         } required
                     />
 
